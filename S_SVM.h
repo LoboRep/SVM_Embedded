@@ -15,16 +15,15 @@ class S_SVM
 {
     const Bias_Matrix Bias;
     Alpha_Type Alpha_Labels;
-    MyMatrixType Supp_vecc;
 	void matrix_mult(const vector <vector <float>> matrix_A, const vector <vector <float>> matrix_B, const vector <vector <float>> matrix_Result);
 	void array_mult(const vector <float> vector_A, const vector  <float> vector_B, vector <float> vector_Result);
-    void kernel_function(const Datatype &data, Kernel_Result &result);
-	
-	
+    virtual void kernel_function(const Datatype &data, Kernel_Result &result)=0;
+protected:
+     MyMatrixType Supp_vecc;
 public:
     S_SVM(float supp_vectora[SUPP_VECTOR_LENTH],float supp_vectorb[SUPP_VECTOR_LENTH],const float &bias,float Alpha_Labels[ALPHA_LABLS_LENTH]);
 	char S_SVM_Class(float x, float y);
 	~S_SVM();
 };
 
-eu fiz merda
+

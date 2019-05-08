@@ -30,10 +30,5 @@ S_SVM::~S_SVM(){
 
 }
 
-void S_SVM:: kernel_function(const Datatype &data, Kernel_Result &result)
-{
-
-    result=Supp_vecc*data;
-}
 
 
