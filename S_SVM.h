@@ -27,3 +27,4 @@ public:
 	~S_SVM();
 };
 
+eu fiz merda
