@@ -6,12 +6,14 @@ CONFIG -= qt
 SOURCES += main.cpp \
     S_SVM.cpp \
     kernel_polynomial.cpp \
-    kernel_linear.cpp
+    kernel_linear.cpp \
+    kernel_rbf.cpp
 
 HEADERS += \
     S_SVM.h \
     parameters.h \
     kernel_polynomial.h \
-    kernel_linear.h
+    kernel_linear.h \
+    kernel_rbf.h
 
 DISTFILES +=

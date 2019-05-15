@@ -5,8 +5,8 @@
 class Kernel_Linear : public S_SVM
 {
 public:
-    Kernel_Linear(float supp_vectora[SUPP_VECTOR_LENTH],float supp_vectorb[SUPP_VECTOR_LENTH],const float &bias,float Alpha_Labels[ALPHA_LABLS_LENTH]);
-    void kernel_function(const Datatype &data, Kernel_Result &result);
+    Kernel_Linear(float *supp_vector,const float &bias,float *Alpha_Labels);
+    void kernel_function(const Datatype &data, Result &result);
 };
 
 #endif // KERNEL_LINEAR_H
