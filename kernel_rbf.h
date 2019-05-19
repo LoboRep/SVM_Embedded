@@ -6,6 +6,7 @@ class Kernel_RBF : public S_SVM
 {
 
     const float Gamma;
+    void Euclidean_distance(const Datatype &data,Result &matrix);
     public:
        Kernel_RBF(float* supp_vector,const float &bias,float *Alpha_Labels, const float gamma);
          void kernel_function(const Datatype &data, Result &result);

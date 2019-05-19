@@ -33,6 +33,4 @@ void Kernel_Polynomial:: kernel_function(const Datatype &data, Result &result)
        }
  matrix_power(degree,result);
 
-
-
 }
